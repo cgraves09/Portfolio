@@ -9,15 +9,21 @@ export default class Projects extends Component {
       >
         <div className="row">
           <div className="col-md-12">
-            <h1 style={{ color: "#b3294e", fontFamily: "Bebas Neue" }}>
+            <h1
+              style={{ color: "#ffff", fontFamily: "Bebas Neue", fontSize: 60 }}
+            >
               Project
             </h1>
-          </div>
-          <div className="col-md-6" style={{ textAlign: "left" }}>
-            <h2 style={{ fontFamily: "Bebas Neue" }}>
-              Chicken Tender — Lead Developer
-            </h2>
             <hr className="lineBreak" />
+          </div>
+          <div className="col-md-12">
+            <h1 style={{ fontFamily: "Courier New" }}>Chicken Tender</h1>
+            <h5 style={{ color: "#b3294e" }}> Lead Developer</h5>
+          </div>
+          <div
+            className="col-md-6"
+            style={{ textAlign: "left", padding: "10%" }}
+          >
             <h5>A powerful solution to find a place to eat.</h5>
             <h6>
               Web Tools: HTML5, CSS, JAVASCRIPT, JQUERY, FIREBASE, AJAX/API
@@ -41,6 +47,7 @@ export default class Projects extends Component {
             <img className="img-fluid" src={food} alt="" />
           </div>
         </div>
+        <hr className="lineBreak" />
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-md-6" style={{ textAlign: "center" }}>
             <a href="https://github.com/cgraves09/chickenTender">

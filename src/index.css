@@ -120,3 +120,6 @@ a:focus::before {
     transform: rotateX(90deg);
   }
 }
+.lineBreak {
+  border: #b3294e solid 1px;
+}
