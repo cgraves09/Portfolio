@@ -12,7 +12,7 @@ export default class Projects extends Component {
             <h1
               style={{ color: "#ffff", fontFamily: "Bebas Neue", fontSize: 60 }}
             >
-              Project
+              Web Application
             </h1>
             <hr className="lineBreak" />
           </div>

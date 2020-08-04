@@ -1,5 +1,4 @@
-import React, { Fragment } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
 import HeadSection from "./HeadSection.jsx";
 import FeatureSection from "./FeatureSection.jsx";
 import ProjectOne from "./ProjectOne.jsx";
@@ -10,36 +9,57 @@ import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 const slider = (
-  <AwesomeSlider
-    style={{ backgroundColor: "	#000000" }}
-    animation="cubeAnimation"
-  >
-    <Fragment style={{ backgroundColor: "	#000000" }}>
+  <AwesomeSlider className="container" animation="cubeAnimation">
+    <div className="test" style={{ backgroundColor: "	#000000" }}>
       <HeadSection />
-    </Fragment>
-    <Fragment style={{ backgroundColor: "	#000000" }}>
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
       <FeatureSection />
-    </Fragment>
-    <Fragment style={{ backgroundColor: "	#000000" }}>
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
       <ProjectOne />
-    </Fragment>
-    <Fragment style={{ backgroundColor: "	#000000" }}>
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
       <ProjectTwo />
-    </Fragment>
-    <Fragment style={{ backgroundColor: "	#000000" }}>
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
       <ProjectThree />
-    </Fragment>
-    <Fragment style={{ backgroundColor: "	#000000" }}>
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
       <Contact />
-    </Fragment>
+    </div>
   </AwesomeSlider>
 );
-function Home(props) {
-  return <div>{slider}</div>;
+const mobile = (
+  <div>
+    <div style={{ backgroundColor: "	#000000" }}>
+      <HeadSection />
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
+      <FeatureSection />
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
+      <ProjectOne />
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
+      <ProjectTwo />
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
+      <ProjectThree />
+    </div>
+    <div style={{ backgroundColor: "	#000000" }}>
+      <Contact />
+    </div>
+  </div>
+);
+let div;
+export default class Home extends Component {
+  render() {
+    if (window.innerWidth <= 800) {
+      div = mobile;
+    } else {
+      div = slider;
+    }
+    return <div>{div}</div>;
+  }
 }
-
-Home.propTypes = {
-  selectHome: PropTypes.func.isRequired,
-};
-
-export default Home;

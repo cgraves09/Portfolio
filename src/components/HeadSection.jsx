@@ -5,7 +5,7 @@ import markerImage from "./images/marker.gif";
 export default class HeadSection extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <div className="wrapper">
           <div className="box-area">
             <div className="box1">
@@ -29,7 +29,12 @@ export default class HeadSection extends Component {
           </div>
         </div>
         <h1
-          style={{ color: "#ffff", fontSize: "50px", fontFamily: "Bebas Neue" }}
+          style={{
+            color: "#ffff",
+            fontSize: "50px",
+            fontFamily: "Bebas Neue",
+            textAlign: "center",
+          }}
         >
           Christopher Graves
         </h1>
@@ -64,7 +69,7 @@ export default class HeadSection extends Component {
             <a href="https://github.com/cgraves09">
               <i
                 style={{ color: "#ffff", fontSize: 40, padding: 0 }}
-                class="fab fa-github"
+                className="fab fa-github"
               ></i>
             </a>
           </div>
@@ -72,7 +77,7 @@ export default class HeadSection extends Component {
             <a href="https://www.linkedin.com/in/christopher-graves-80a41418a/">
               <i
                 style={{ color: "#ffff", fontSize: 40, padding: 0 }}
-                class="fab fa-linkedin-in"
+                className="fab fa-linkedin-in"
               ></i>
             </a>
           </div>
@@ -85,7 +90,7 @@ export default class HeadSection extends Component {
                   padding: 0,
                   hover: "text-decoration: underline",
                 }}
-                class="far fa-file"
+                className="far fa-file"
               ></i>
             </a>
           </div>
