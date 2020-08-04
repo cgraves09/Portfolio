@@ -1,0 +1,122 @@
+.list-group-item {
+  background-color: #000000;
+}
+a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: color 0.1s, background-color 0.1s;
+  color: #000;
+}
+a:hover {
+  color: #b3294e;
+}
+a:focus,
+a:active {
+  color: #b3294e;
+}
+
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 3px;
+  width: 100%;
+  background-color: #b3294e;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  transition: color 0.1s, -webkit-transform 0.2s ease-out;
+  transition: color 0.1s, transform 0.2s ease-out;
+  transition: color 0.1s, transform 0.2s ease-out,
+    -webkit-transform 0.2s ease-out;
+}
+
+a:active::before {
+  background-color: #00bcd4;
+}
+
+a:hover::before,
+a:focus::before {
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.wrapper {
+  width: 200px;
+  height: 200px;
+  margin: 15% auto;
+}
+
+.box-area {
+  text-align: center;
+  font-family: "Bebas Neue";
+  color: #ffffff;
+  animation: animate 10s ease-in-out infinite;
+  transform-style: preserve-3d;
+  transform-origin: 100px 100px 0;
+}
+.box-area div {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.box-area .box1 {
+  line-height: 300px;
+  background-color: #000000;
+  border: solid 1px #ffffff;
+  transform: translateZ(100px);
+}
+.box-area .box2 {
+  border: solid 1px #ffffff;
+  background-color: #000000;
+  transform: rotateY(90deg) translateZ(100px);
+}
+.box-area .box3 {
+  border: solid 1px #ffffff;
+  background-color: #000000;
+  transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+}
+.box-area .box4 {
+  border: solid 1px #ffffff;
+  background-color: #000000;
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box5 {
+  border: solid 1px #ffffff;
+  background-color: #000000;
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+}
+.box-area .box6 {
+  border: solid 1px #ffffff;
+  background-color: #000000;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+@keyframes animate {
+  from,
+  to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  16% {
+    transform: rotateY(90deg);
+  }
+  33% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+  }
+  50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+  }
+  66% {
+    transform: rotateY(-270deg) rotateZ(90deg);
+  }
+  83% {
+    transform: rotateX(90deg);
+  }
+}

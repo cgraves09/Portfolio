@@ -6,7 +6,7 @@ const styles = {
   waves: {
     position: "relative",
     width: "100%",
-    marginBottom: -7,
+    marginBottom: -12,
     height: "7vw",
     minHeight: "7vw"
   },
