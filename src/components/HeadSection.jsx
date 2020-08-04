@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
-import markerImage from "../images/marker.gif";
+import markerImage from "./images/marker.gif";
 
 export default class HeadSection extends Component {
   render() {

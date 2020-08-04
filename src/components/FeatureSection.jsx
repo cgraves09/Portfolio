@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import htmlGif from "../images/html.gif";
-import serverGif from "../images/server.gif";
-import toolsGif from "../images/tools.gif";
-import WaveBorder from "../../../shared/components/WaveBorder";
-import "../../../index.css";
+import htmlGif from "./images/html.gif";
+import serverGif from "./images/server.gif";
+import toolsGif from "./images/tools.gif";
+import WaveBorder from "../shared/components/WaveBorder";
+import "../index.css";
 
 export default class FeatureSection extends Component {
   render() {

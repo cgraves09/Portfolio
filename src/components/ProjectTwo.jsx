@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import robot from "../images/robot.gif";
+import robot from "./images/robot.gif";
 export default class Projects extends Component {
   render() {
     return (

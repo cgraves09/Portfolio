@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import selfImg from "../images/Self.jpg";
+import selfImg from "./images/Self.jpg";
 
 export default class HeadSection extends Component {
   render() {

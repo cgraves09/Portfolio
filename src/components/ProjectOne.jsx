@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import food from "../images/food.gif";
+import brewivery from "./images/brewivery.gif";
 export default class Projects extends Component {
   render() {
     return (
@@ -15,35 +15,36 @@ export default class Projects extends Component {
           </div>
           <div className="col-md-6" style={{ textAlign: "left" }}>
             <h2 style={{ fontFamily: "Bebas Neue" }}>
-              Chicken Tender — Lead Developer
+              Brewivery — Lead Developer
             </h2>
             <hr className="lineBreak" />
-            <h5>A powerful solution to find a place to eat.</h5>
+            <h5>Full Stack MERN application designed for a delivery service</h5>
             <h6>
-              Web Tools: HTML5, CSS, JAVASCRIPT, JQUERY, FIREBASE, AJAX/API
+              Web Tools: Javascript (ES6), React, MongoDB, Mongoose, Express,
+              Node.js,Axios, Passport
             </h6>
             <h6>Role Snapshot: </h6>
             <ul class="list-group">
               <li class="list-group-item">
-                Created Api calls to Yelp for restaurant information and Google
-                maps api for map locations.
+                Created and designed layout and functionality of UI using React
+                and bootstrap.
               </li>
               <li class="list-group-item">
-                Firebase database to hold users choices to determine a final
-                restaurant choice.
+                Mapped out back end functionality using Express and Node
               </li>
               <li class="list-group-item">
-                JQUERY for DOM manipulation to handle users choices.
+                Optimized routing to listen to Http requests and interactions
+                with the MongDB database.
               </li>
             </ul>
           </div>
           <div className="col-md-6">
-            <img className="img-fluid" src={food} alt="" />
+            <img className="img-fluid" src={brewivery} alt="" />
           </div>
         </div>
         <div className="row" style={{ textAlign: "center" }}>
           <div className="col-md-6" style={{ textAlign: "center" }}>
-            <a href="https://github.com/cgraves09/chickenTender">
+            <a href="https://github.com/cgraves09/Brewivery">
               <i
                 style={{ color: "#ffff", fontSize: 40, padding: 0 }}
                 class="fab fa-github"
@@ -51,7 +52,7 @@ export default class Projects extends Component {
             </a>
           </div>
           <div className="col-md-6">
-            <a href="https://cgraves09.github.io/chickenTender/">
+            <a href="https://brewivery.herokuapp.com/">
               <i
                 style={{
                   color: "#ffff",
