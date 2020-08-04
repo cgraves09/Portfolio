@@ -22,11 +22,12 @@ export default class Projects extends Component {
           </div>
           <div
             className="col-md-6"
-            style={{ textAlign: "left", padding: "10%" }}
+            style={{ textAlign: "left", paddingTop: "10%" }}
           >
             <h5>A powerful solution to find a place to eat.</h5>
             <h6>
-              Web Tools: HTML5, CSS, JAVASCRIPT, JQUERY, FIREBASE, AJAX/API
+              Web Tools: HTML5, CSS, Javascript, JQuery, Firebase, Ajax/Api
+              Routing
             </h6>
             <h6>Role Snapshot: </h6>
             <ul class="list-group">

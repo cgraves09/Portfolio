@@ -10,22 +10,22 @@ import "react-awesome-slider/dist/styles.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 const slider = (
   <AwesomeSlider className="container" animation="cubeAnimation">
-    <div className="test" style={{ backgroundColor: "	#000000" }}>
+    <div className="container-fluid" style={{ backgroundColor: "	#000000" }}>
       <HeadSection />
     </div>
-    <div style={{ backgroundColor: "	#000000" }}>
+    <div className="container-fluid" style={{ backgroundColor: "	#000000" }}>
       <FeatureSection />
     </div>
-    <div style={{ backgroundColor: "	#000000" }}>
+    <div className="container-fluid" style={{ backgroundColor: "	#000000" }}>
       <ProjectOne />
     </div>
-    <div style={{ backgroundColor: "	#000000" }}>
+    <div className="container-fluid" style={{ backgroundColor: "	#000000" }}>
       <ProjectTwo />
     </div>
-    <div style={{ backgroundColor: "	#000000" }}>
+    <div className="container-fluid" style={{ backgroundColor: "	#000000" }}>
       <ProjectThree />
     </div>
-    <div style={{ backgroundColor: "	#000000" }}>
+    <div className="container-fluid" style={{ backgroundColor: "	#000000" }}>
       <Contact />
     </div>
   </AwesomeSlider>
